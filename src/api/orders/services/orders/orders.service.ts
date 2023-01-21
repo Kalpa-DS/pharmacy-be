@@ -1,14 +1,12 @@
-import { CartsService } from 'src/api/carts/services/carts/carts.service';
 import { Order } from './../../interfaces/order.interface';
 import { Injectable } from '@nestjs/common';
-import { OrdersRepositoryService } from 'src/db/repositories/orders.repository/orders.repository.service';
+import { OrdersRepositoryService } from 'src/db/repository/orders.repository/orders.repository.service';
 
 @Injectable()
 export class OrdersService {
   constructor(
-    private readonly ordersRepository: OrdersRepositoryService,
-  ) // private readonly cartService: CartsService,
-  {}
+    private readonly ordersRepository: OrdersRepositoryService, // private readonly cartService: CartsService,
+  ) {}
 
   findAll(): Promise<Order[]> {
     return this.ordersRepository.findAll();

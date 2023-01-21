@@ -1,7 +1,7 @@
 import { Cart } from './../../interfaces/cart.interface';
 import { Injectable } from '@nestjs/common';
-import { CartsRepositoryService } from 'src/db/repositories/carts.repository/carts.repository.service';
 import { Product } from 'src/api/products/interfaces/product.interface';
+import { CartsRepositoryService } from 'src/db/repository/carts.repository/carts.repository.service';
 
 @Injectable()
 export class CartsService {

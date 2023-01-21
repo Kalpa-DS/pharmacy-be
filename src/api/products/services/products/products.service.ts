@@ -1,6 +1,6 @@
 import { Product } from './../../interfaces/product.interface';
 import { Injectable } from '@nestjs/common';
-import { ProductsRepositoryService } from 'src/db/repositories/products.repository/products.repository.service';
+import { ProductsRepositoryService } from 'src/db/repository/products.repository/products.repository.service';
 
 @Injectable()
 export class ProductsService {
